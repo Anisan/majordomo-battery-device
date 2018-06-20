@@ -1,0 +1,12 @@
+<style>
+.device-icon.battery {
+    background-image: url(../cms/scenes/styles/battery/battery.png);
+}
+</style>
+<div class="device-widget sensor %.alive|"offline;online"%" onclick="var url=('/pChart/?p[]=%.object_title%'+'.value&p[]=%.object_title%'+'.valueVoltage&op=log&subop=24h&minimal=1');$.fancybox.open({ href: url, type: 'iframe' });;return false;">
+<div class="device-icon battery"></div>
+<div class="device-header">%.value% %
+    %.valueVoltage% V
+</div>
+<div class="device-details">%.object_description%</div>
+</div>
