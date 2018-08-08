@@ -1,10 +1,39 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <style>
 .device-icon.battery {
-    background-image: url(../cms/scenes/styles/battery/battery.png);
+    background-image: none;
+    padding: 5px;
+    font-size:25px;
+    text-align: center;
 }
+
+.level{
+  display: inline-block;
+  position:relative;
+  color:#444;
+}
+
+.level .animate{
+  width:0%; 
+  position:absolute;
+  left: 0; 
+  top:5px; 
+  overflow: hidden;
+  color:#27ae60;
+  z-index: -1;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  transition:all 0.5s ease;
+}
+
 </style>
-<div class="device-widget sensor %.alive|"offline;online"%" onclick="var url=('/pChart/?p[]=%.object_title%'+'.value&p[]=%.object_title%'+'.valueVoltage&op=log&subop=24h&minimal=1');$.fancybox.open({ src: url, type: 'iframe' });;return false;">
-<div class="device-icon battery"></div>
+<div class='device-widget sensor %.alive|"offline;online"%' onclick="var url=('/pChart/?p[]=%.object_title%'+'.value&n[]=Заряд&p[]=%.object_title%'+'.valueVoltage&n[]=Напряжение&op=log&subop=24h&minimal=1');$.fancybox.open({ src: url, type: 'iframe' });return false;">
+<div class="device-icon battery">
+    <span class="level fa-rotate-270">
+        <i class="fa fa-battery-empty"></i> 
+        <i class="fa fa-battery-4 animate" style="width:%.value%%"></i>
+    </span>
+</div>
 <div class="device-header">%.value% %
     %.valueVoltage% V
 </div>
