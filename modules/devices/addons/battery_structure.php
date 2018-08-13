@@ -11,7 +11,8 @@ $this->device_types['sensor_battery'] = array(
         'calculateByVoltage'=>array('DESCRIPTION'=>'Calucate percent by voltage','_CONFIG_TYPE'=>'yesno')
     ),
     'METHODS'=>array(
-        'valueVoltageUpdated'=>array('DESCRIPTION'=>'Value Voltage Updated','CALL_PARENT'=>1),
+        'valueVoltageUpdated'=>array('DESCRIPTION'=>'Value Voltage Updated'),
+        'valueUpdated'=>array('DESCRIPTION'=>'Value Updated','CALL_PARENT'=>1), 
     ));
 
 
