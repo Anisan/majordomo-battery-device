@@ -16,4 +16,6 @@ $this->device_types['sensor_battery'] = array(
     ));
 
 
+@include_once(ROOT.'languages/SBatterySensors_'.SETTINGS_SITE_LANGUAGE.'.php');
+@include_once(ROOT.'languages/SBatterySensors_default'.'.php');
 

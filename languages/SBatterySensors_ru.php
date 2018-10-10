@@ -1,7 +1,7 @@
 <?php
 
 $dictionary=array(
-   'DEVICES_LINK_SENSOR_PASS_BATTERY' => 'Пересылка данных о батарейки',
+   'DEVICES_LINK_SENSOR_PASS_BATTERY' => 'Пересылка данных о батареи',
    'DEVICES_LINK_SENSOR_PASS_BATTERY_DESCRIPTION' => 'Выставляет свойства в связанном объекте и посылает данные в HomeKit',
 );
 
